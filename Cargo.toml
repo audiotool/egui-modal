@@ -11,9 +11,11 @@ authors = ["n00kii"]
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-egui = { git = "https://github.com/audiotool/egui", default-features = false }
+egui = { git = "https://github.com/audiotool/egui", branch="update-egui", default-features = false }
+#egui = { path = "../egui/crates/egui", default-features = false }
 
 
 
 [dev-dependencies]
-eframe  = { git = "https://github.com/audiotool/egui" }
+eframe  = { git = "https://github.com/audiotool/egui", branch="update-egui"}
+#eframe  = { path="../egui/crates/eframe" }
